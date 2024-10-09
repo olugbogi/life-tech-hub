@@ -10,3 +10,11 @@
   /* padding: 2rem; */
   /* text-align: center; */
 }
+
+.hero-box {
+  max-width: 452px !important;
+}
+
+.hero-sm-box {
+  max-width: 338px !important;
+}
