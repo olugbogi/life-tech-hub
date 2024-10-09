@@ -7,6 +7,7 @@ function BecomeBtn() {
         target="_blank"
         className="bg-secondary font-inter py-2 px-5 rounded-lg text-white underline"
       >
+      
         Become a Facilitator
       </a>
     </div>
