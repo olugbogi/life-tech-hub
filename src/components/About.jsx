@@ -8,7 +8,7 @@ function About() {
       >
         <h3 className="text-sometexts">About Life Tech Hub</h3>
         <h1 className="font-medium py-8" style={{ fontSize: "40px" }}>
-          Empowering <span className="text-primary">Teens</span> and{" "}
+          Empowering <span className="text-primary">Teenagers</span> and{" "}
           <span className="text-primary">Youths</span> with
           <span className="text-primary"> Tech Skills</span> for Real-World
           Impact!
