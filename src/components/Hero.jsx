@@ -5,16 +5,16 @@ import JoinBtnWhite from "./Buttons/JoinBtnWhite";
 function Hero() {
   return (
     <div>
-      <div className="flex justify-between items-center gap-10 py-12 bg-primary max-w-6xl mx-auto rounded-3xl p-10 font-unbounded">
+      <div
+        className="flex justify-between items-center gap-10 py-12 bg-primary mx-auto rounded-3xl p-10 font-unbounded"
+        style={{ maxWidth: "1201px" }}
+      >
         <div className="hero-box">
           <h3 className="hero-sm-box p-2.5 bg-white text-secondary rounded-full text-xs text-center">
             Empowering Innovators, Shaping the Future
           </h3>
           <div className="pt-5">
-            <h1
-              className="font-bold text-white"
-              style={{ fontSize: "52px" }}
-            >
+            <h1 className="font-bold text-white" style={{ fontSize: "52px" }}>
               Empowering <span className="text-secondary">You</span> to Thrive
               in the
               <span className="text-secondary"> Digital World!</span>
@@ -24,7 +24,7 @@ function Hero() {
               the skills you need to succeed in this digital age.
             </p>
           </div>
-          <div className="flex gap-3 pt-14">
+          <div className="flex gap-3 pt-14 pb-6">
             <BecomeBtn />
             <JoinBtnWhite />
           </div>
