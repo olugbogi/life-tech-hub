@@ -3,7 +3,7 @@ function About() {
   return (
     <div>
       <div
-        className="font-unbounded text-center m-auto pt-10"
+        className="font-unbounded text-center mx-auto my-12 pt-10"
         style={{ maxWidth: "730px" }}
       >
         <h3 className="text-sometexts">About Life Tech Hub</h3>

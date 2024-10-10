@@ -3,7 +3,7 @@ import Icons from "../components/Icons/icons";
 function Values() {
   return (
     <div>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col py-12">
         <div className=" flex justify-center items-center mt-10">
           <p className=" text-alttext text-xl font-unbounded">
             Our Core Values
