@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #706c6c;
+  border-radius: 0.625rem;
+}
+
 #root {
   max-width: 1440px;
   margin: 0 auto;
@@ -18,3 +31,10 @@
 .hero-sm-box {
   max-width: 338px !important;
 }
+
+/* .contact-bg {
+  background: url(./src/assets/contact-bg.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+} */
