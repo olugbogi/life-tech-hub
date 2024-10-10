@@ -12,6 +12,7 @@ export default {
         alttext: "#1e1f4b",
         sometexts: "#1a1a1a",
         teamtexts: "#3e3232",
+        footer: "#1d1d1d",
       },
       fontFamily: {
         inter: ["Inter", "serif"],
