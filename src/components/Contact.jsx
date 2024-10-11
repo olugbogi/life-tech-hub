@@ -4,6 +4,7 @@ function Contact() {
   return (
     <div>
       <div
+        id="contact"
         className="contact-bg font-unbounded mx-12 p-10 bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${bgImage})` }}
       >

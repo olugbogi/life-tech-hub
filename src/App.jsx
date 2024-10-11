@@ -10,8 +10,18 @@ import Why from "./components/Why";
 import Get from "./components/Get";
 import Courses from "./components/Courses";
 import Team from "./components/Team";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   return (
     <>
       <Header />

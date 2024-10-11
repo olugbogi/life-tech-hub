@@ -3,11 +3,19 @@ function About() {
   return (
     <div>
       <div
-        className="font-unbounded text-center m-auto pt-10"
+        id="about"
+        className="font-unbounded text-center mx-auto my-12 pt-10"
         style={{ maxWidth: "730px" }}
+        data-aos-mirror="true"
       >
-        <h3 className="text-sometexts">About Life Tech Hub</h3>
-        <h1 className="font-medium py-8" style={{ fontSize: "40px" }}>
+        <h3 className="text-sometexts" data-aos="fade-in">
+          About Life Tech Hub
+        </h3>
+        <h1
+          className="font-medium py-8"
+          style={{ fontSize: "40px" }}
+          data-aos="zoom-in"
+        >
           Empowering <span className="text-primary">Teenagers</span> and{" "}
           <span className="text-primary">Youths</span> with
           <span className="text-primary"> Tech Skills</span> for Real-World
