@@ -4,8 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
---webkit-scrollbar width {
-  width: 10px;
+::-webkit-scrollbar {
+  width: 0.65rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #706c6c;
+  border-radius: 0.625rem;
 }
 
 #root {

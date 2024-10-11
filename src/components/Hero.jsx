@@ -8,6 +8,8 @@ function Hero() {
       <div
         className="flex justify-between items-center gap-10 py-12 bg-primary mx-auto rounded-3xl p-10 font-unbounded"
         style={{ maxWidth: "1201px" }}
+        data-aos="fade-in"
+        data-aos-mirror="true"
       >
         <div className="hero-box">
           <h3 className="hero-sm-box p-2.5 bg-white text-secondary rounded-full text-xs text-center">

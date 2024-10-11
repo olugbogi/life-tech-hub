@@ -1,5 +1,6 @@
 import Buttons from "./Navs/Buttons";
 import Links from "./Navs/Links";
+// import mockData from "../mockData/data";
 
 function Navbar() {
   return (
@@ -12,6 +13,15 @@ function Navbar() {
           The Life Tech Hub
         </a>
         <Links />
+        {/* <ul className="flex justify-center items-center gap-10">
+          {mockData.map((item) => (
+            <li key={item.id}>
+              <a className="font-inter font-medium" href={item.link}>
+                {item.title}
+              </a>
+            </li>
+          ))}
+        </ul> */}
         <Buttons />
       </div>
     </div>
