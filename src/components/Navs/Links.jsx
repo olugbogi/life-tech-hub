@@ -3,24 +3,24 @@ import mockData from "../../mockData/data.js";
 function Links() {
   return (
     <div>
-      {/* <div className="flex justify-center items-center gap-10">
-        <a href="/" className="font-inter font-medium">
+      {/* <div className="flex items-center justify-center gap-10">
+        <a href="/" className="font-medium font-inter">
           Home
         </a>
-        <a href="/" className="font-inter font-medium">
+        <a href="/" className="font-medium font-inter">
           About Us
         </a>
-        <a href="/" className="font-inter font-medium">
+        <a href="/" className="font-medium font-inter">
           Meet the Team
         </a>
-        <a href="/" className="font-inter font-medium">
+        <a href="/" className="font-medium font-inter">
           Contact Us
         </a>
       </div> */}
-      <div className="flex justify-center items-center gap-10">
+      <div className="flex items-center justify-center gap-10">
         {mockData.map((item) => (
           <div key={item.id}>
-            <a className="font-inter font-medium" href={item.link}>
+            <a className="font-medium font-inter" href={item.link}>
               {item.title}
             </a>
           </div>

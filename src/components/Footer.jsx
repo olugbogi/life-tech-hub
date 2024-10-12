@@ -6,15 +6,15 @@ import linkedin from "../assets/linkedin.svg";
 function Footer() {
   return (
     <div>
-      <div className="flex justify-center  gap-20 p-10 bg-black text-neutral-300 flex-wrap mt-20">
+      <div className="flex flex-wrap justify-center gap-20 p-10 mt-20 bg-black text-neutral-300">
         <div className="">
           <a
             href="https://www.newlifefan.org/"
-            className=" font-opensans text-4xl font-bold text-white underline"
+            className="text-4xl font-bold text-white underline font-opensans"
           >
             NLFANM
           </a>
-          <p className="mt-10 tracking-wide leading-7 mb-6">
+          <p className="mt-10 mb-6 leading-7 tracking-wide">
             New Life For All Nations Ministries Inc. <br /> involves in the
             spread of the Gospel in rural <br /> and urban places which results
             in establishing <br /> churches, hundreds of which are located all{" "}
@@ -34,64 +34,64 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="  font-inter text-2xl font-semibold mb-8 text-white ">
+          <h3 className="mb-8 text-2xl font-semibold text-white font-inter">
             Courses
           </h3>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Digital Marketing
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Social Media Marketing
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Data Analysis
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Product Development
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Web Development
           </p>
         </div>
 
         <div>
-          <h3 className="  font-inter text-2xl font-semibold mb-8 text-white">
+          <h3 className="mb-8 text-2xl font-semibold text-white font-inter">
             Courses
           </h3>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Digital Marketing
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Social Media Marketing
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Data Analysis
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Product Development
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Web Development
           </p>
         </div>
 
         <div>
-          <h3 className="  font-inter text-2xl font-semibold mb-8 text-white">
+          <h3 className="mb-8 text-2xl font-semibold text-white font-inter">
             Courses
           </h3>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Digital Marketing
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Social Media Marketing
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Data Analysis
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Product Development
           </p>
-          <p className="font-inter font-normal text-sm leading-8">
+          <p className="text-sm font-normal leading-8 font-inter">
             Web Development
           </p>
         </div>

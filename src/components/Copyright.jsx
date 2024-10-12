@@ -1,11 +1,11 @@
 function Copyright() {
   return (
     <div>
-      <div className="bg-footer flex justify-center gap-4 items-center py-10">
+      <div className="flex items-center justify-center gap-4 py-10 bg-footer">
         <h1 className="text-sm text-white font-opensans">
-          &copy; Copyright{" "}
+          &copy; Copyright
           <a
-            className="underline font-bold"
+            className="font-bold underline"
             href="https://www.newlifefan.org/"
             referrerPolicy="no-referrer"
             target="_blank"

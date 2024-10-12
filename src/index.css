@@ -24,13 +24,33 @@
   /* text-align: center; */
 }
 
-.hero-box {
-  max-width: 452px !important;
+@media (min-width: 768px) {
+  .hero-box {
+    max-width: 452px !important;
+  }
+
+  .hero-sm-box {
+    max-width: 338px !important;
+  }
+
+  .heroImg {
+    width: 505px;
+    height: 450px;
+  }
+
+  .contact {
+    font-size: 64px;
+    max-width: 575px;
+  }
 }
 
-.hero-sm-box {
-  max-width: 338px !important;
-}
+/* @media (max-width: 767px) {
+  .heroImg {
+    display: block;
+    margin: auto;
+    width: 600px !important;
+  }
+} */
 
 /* .contact-bg {
   background: url(./src/assets/contact-bg.svg) !important;
