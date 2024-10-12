@@ -5,18 +5,18 @@ import Links from "./Navs/Links";
 function Navbar() {
   return (
     <div>
-      <div className="flex justify-between items-center py-7 max-w-6xl mx-auto">
+      <div className="flex items-center justify-between max-w-6xl mx-auto md:px-5 lg:px-0 py-7">
         <a
           href="/"
-          className="text-primary font-manrope text-xl font-extrabold"
+          className="text-xl font-extrabold text-primary font-manrope"
         >
           The Life Tech Hub
         </a>
         <Links />
-        {/* <ul className="flex justify-center items-center gap-10">
+        {/* <ul className="flex items-center justify-center gap-10">
           {mockData.map((item) => (
             <li key={item.id}>
-              <a className="font-inter font-medium" href={item.link}>
+              <a className="font-medium font-inter" href={item.link}>
                 {item.title}
               </a>
             </li>

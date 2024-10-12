@@ -2,11 +2,11 @@ function icons() {
   return (
     <div>
       <div
-        className="flex justify-center items-center text-white rounded-full bg-primary"
+        className="flex items-center justify-center text-white rounded-full bg-primary"
         style={{ width: "52px", height: "52px" }}
       >
         <i
-          className="bx bxs-bookmark-alt-minus text-3xl"
+          className="text-3xl bx bxs-bookmark-alt-minus"
           // style={{ width: "32px", height: "28.8px" }}
         ></i>
       </div>

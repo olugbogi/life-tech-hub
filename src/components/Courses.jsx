@@ -3,238 +3,197 @@ import GetStarted from "./Buttons/GetStartedBtn";
 import Months from "../assets/months.svg";
 import Online from "../assets/online.svg";
 import Beginner from "../assets/beginner.svg";
-import dataAnalysis from '../assets/data-analysis.svg'
-import mobileApp from '../assets/mobile-app.svg'
-import digitalMarketing from '../assets/digital-marketing.svg'
-import cloudComputing from '../assets/cloud-computing.svg'
-import webDevelopment from '../assets/web-development.svg'
+import dataAnalysis from "../assets/data-analysis.svg";
+import mobileApp from "../assets/mobile-app.svg";
+import digitalMarketing from "../assets/digital-marketing.svg";
+import cloudComputing from "../assets/cloud-computing.svg";
+import webDevelopment from "../assets/web-development.svg";
 
 function Courses() {
   return (
     <div>
-      <div className="flex justify-center items-center flex-col mt-32">
+      <div className="flex flex-col items-center justify-center mt-32">
         <div className="mb-16">
-          <p className="font-unbounded font-normal text-base text-center mb-3">
+          <p className="mb-3 text-base font-normal text-center font-unbounded">
             OUR COURSES
           </p>
-          <h1 className="font-unbounded font-medium text-4xl tracking-wider text-center">
+          <h1 className="px-2 text-4xl font-medium tracking-wider text-center font-unbounded">
             We offer a range of courses designed to equip <br /> you with
-            essential tech skills for the digital <br />{" "}
-            world
+            essential tech skills for the digital <br /> world
           </h1>
         </div>
 
-        <div className="flex gap-5  flex-wrap justify-center items-center">
-          <div className="border-2  p-1 rounded-2xl">
+        <div className="flex flex-wrap items-center justify-center gap-16 lg:px-20">
+          <div className="p-3 border-2 border-solid rounded-2xl">
             <div>
               <img src={uiDesign} alt="" className="rounded-xl w-80" />
-              <h4 className="font-unbounded text-base mt-4 ml-1">
+              <h4 className="mt-4 ml-1 text-base font-unbounded">
                 UI/UX Design Essential Training
               </h4>
-              <div className="flex justify-center gap-11 mt-5 mr-4">
-                <div className="flex gap-2">
+              <div className="flex justify-center mr-4 gap-11 mt-7">
+                <div className="flex items-center gap-2">
                   <img src={Months} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
+                  <p className="text-xs font-medium text-neutral-900">
                     2 Months
                   </p>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex items-center gap-2">
                   <img src={Online} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">Online</p>
+                  <p className="text-xs font-medium text-neutral-900">Online</p>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex items-center gap-2">
                   <img src={Beginner} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
+                  <p className="text-xs font-medium text-neutral-900">
                     Beginner
                   </p>
                 </div>
               </div>
 
-              <div className="mt-5 mb-6">
+              <div className="mt-10 mb-6">
                 <GetStarted />
               </div>
             </div>
           </div>
 
-          <div>
-            <div className="border-2 border-solid p-1 rounded-2xl">
-              <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
-              <h4 className="font-unbounded  text-base mt-4 ml-2">
-                Data Analysis
-              </h4>
-              <div className="flex justify-center gap-10 mt-5 mr-4">
-                <div className="flex gap-2">
-                  <img src={Months} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    2 Months
-                  </p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Online} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">Online</p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Beginner} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    Beginner
-                  </p>
-                </div>
+          <div className="p-3 border-2 border-solid rounded-2xl">
+            <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
+            <h4 className="mt-4 ml-2 text-base font-unbounded">
+              Data Analysis
+            </h4>
+            <div className="flex justify-center gap-10 mr-4 mt-7">
+              <div className="flex items-center gap-2">
+                <img src={Months} alt="" />
+                <p className="text-xs font-medium text-neutral-900">2 Months</p>
               </div>
 
-              <div className="mt-5 mb-6 ml-1">
-                <GetStarted />
+              <div className="flex items-center gap-2">
+                <img src={Online} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Online</p>
               </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Beginner} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Beginner</p>
+              </div>
+            </div>
+
+            <div className="mt-10 mb-6">
+              <GetStarted />
             </div>
           </div>
 
-          <div>
-            <div className="border-2 border-solid p-1 rounded-2xl">
-              <img src={mobileApp} alt="" className="rounded-xl w-80" />
-              <h4 className="font-unbounded text-base mt-4 ml-2">
-                Mobile App Development
-              </h4>
-              <div className="flex justify-center gap-10 mt-5 mr-4">
-                <div className="flex gap-2">
-                  <img src={Months} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    2 Months
-                  </p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Online} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">Online</p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Beginner} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    Beginner
-                  </p>
-                </div>
+          <div className="p-3 border-2 border-solid rounded-2xl">
+            <img src={mobileApp} alt="" className="rounded-xl w-80" />
+            <h4 className="mt-4 ml-2 text-base font-unbounded">
+              Mobile App Development
+            </h4>
+            <div className="flex justify-center gap-10 mr-4 mt-7">
+              <div className="flex items-center gap-2">
+                <img src={Months} alt="" />
+                <p className="text-xs font-medium text-neutral-900">2 Months</p>
               </div>
 
-              <div className="mt-5 mb-6 ml-1">
-                <GetStarted />
+              <div className="flex items-center gap-2">
+                <img src={Online} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Online</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Beginner} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Beginner</p>
               </div>
             </div>
-            </div>
-              
-          <div>
-            <div className="border-2 border-solid p-1 rounded-2xl">
-              <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
-              <h4 className="font-unbounded  text-base mt-4 ml-2">
-                Data Analysis
-              </h4>
-              <div className="flex justify-center gap-10 mt-5 mr-4">
-                <div className="flex gap-2">
-                  <img src={Months} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    2 Months
-                  </p>
-                </div>
 
-                <div className="flex gap-2">
-                  <img src={Online} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">Online</p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Beginner} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    Beginner
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5 mb-6 ml-1">
-                <GetStarted />
-              </div>
+            <div className="mt-10 mb-6">
+              <GetStarted />
             </div>
           </div>
 
-             
-          <div>
-            <div className="border-2 border-solid p-1 rounded-2xl">
-              <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
-              <h4 className="font-unbounded  text-base mt-4 ml-2">
-                Data Analysis
-              </h4>
-              <div className="flex justify-center gap-10 mt-5 mr-4">
-                <div className="flex gap-2">
-                  <img src={Months} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    2 Months
-                  </p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Online} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">Online</p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Beginner} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    Beginner
-                  </p>
-                </div>
+          <div className="p-3 border-2 border-solid rounded-2xl">
+            <img src={digitalMarketing} alt="" className="rounded-xl w-80" />
+            <h4 className="mt-4 ml-2 text-base font-unbounded">
+              Digital Marketing
+            </h4>
+            <div className="flex justify-center gap-10 mr-4 mt-7">
+              <div className="flex items-center gap-2">
+                <img src={Months} alt="" />
+                <p className="text-xs font-medium text-neutral-900">2 Months</p>
               </div>
 
-              <div className="mt-5 mb-6 ml-1">
-                <GetStarted />
+              <div className="flex items-center gap-2">
+                <img src={Online} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Online</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Beginner} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Beginner</p>
               </div>
             </div>
-          </div>
-         
 
-         
-          <div>
-            <div className="border-2 border-solid p-1 rounded-2xl">
-              <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
-              <h4 className="font-unbounded  text-base mt-4 ml-2">
-                Data Analysis
-              </h4>
-              <div className="flex justify-center gap-10 mt-5 mr-4">
-                <div className="flex gap-2">
-                  <img src={Months} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    2 Months
-                  </p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Online} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">Online</p>
-                </div>
-
-                <div className="flex gap-2">
-                  <img src={Beginner} alt="" />
-                  <p className="text-neutral-900 font-medium text-xs">
-                    Beginner
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5 mb-6 ml-1">
-                <GetStarted />
-              </div>
+            <div className="mt-10 mb-6">
+              <GetStarted />
             </div>
           </div>
 
-          
+          <div className="p-3 border-2 border-solid rounded-2xl">
+            <img src={cloudComputing} alt="" className="rounded-xl w-80" />
+            <h4 className="mt-4 ml-2 text-base font-unbounded">
+              Cloud Computing
+            </h4>
+            <div className="flex justify-center gap-10 mr-4 mt-7">
+              <div className="flex items-center gap-2">
+                <img src={Months} alt="" />
+                <p className="text-xs font-medium text-neutral-900">2 Months</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Online} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Online</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Beginner} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Beginner</p>
+              </div>
+            </div>
+
+            <div className="mt-10 mb-6">
+              <GetStarted />
+            </div>
+          </div>
+
+          <div className="p-3 border-2 border-solid rounded-2xl">
+            <img src={webDevelopment} alt="" className="rounded-xl w-80" />
+            <h4 className="mt-4 ml-2 text-base font-unbounded">
+              Web Development
+            </h4>
+            <div className="flex justify-center gap-10 mr-4 mt-7">
+              <div className="flex items-center gap-2">
+                <img src={Months} alt="" />
+                <p className="text-xs font-medium text-neutral-900">2 Months</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Online} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Online</p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <img src={Beginner} alt="" />
+                <p className="text-xs font-medium text-neutral-900">Beginner</p>
+              </div>
+            </div>
+
+            <div className="mt-10 mb-6">
+              <GetStarted />
+            </div>
           </div>
         </div>
-
-       
-          </div>
-        
-    
-    
+      </div>
+    </div>
   );
 }
 

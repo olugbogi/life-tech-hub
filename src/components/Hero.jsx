@@ -6,37 +6,31 @@ function Hero() {
   return (
     <div>
       <div
-        className="flex justify-between items-center gap-10 py-12 bg-primary mx-auto rounded-3xl p-10 font-unbounded"
+        className="flex flex-col items-center justify-between gap-10 p-10 py-5 mx-2 lg:mx-auto bg-primary rounded-3xl font-unbounded lg:flex-row lg:py-12"
         style={{ maxWidth: "1201px" }}
-        data-aos="fade-in"
-        data-aos-mirror="true"
       >
-        <div className="hero-box">
-          <h3 className="hero-sm-box p-2.5 bg-white text-secondary rounded-full text-xs text-center">
+        <div className="flex flex-col items-center text-center lg:items-start lg:text-left hero-box">
+          <h3 className="hero-sm-box bg-white text-secondary rounded-full text-xs text-center p-2.5">
             Empowering Innovators, Shaping the Future
           </h3>
           <div className="pt-5">
-            <h1 className="font-bold text-white" style={{ fontSize: "52px" }}>
+            <h1 className="text-4xl font-bold text-white md:text-6xl lg:text-7xl">
               Empowering <span className="text-secondary">You</span> to Thrive
               in the
               <span className="text-secondary"> Digital World!</span>
             </h1>
-            <p className="text-base font-normal text-white pt-5">
+            <p className="pt-5 text-base font-normal text-white">
               At The Life Tech Hub, we’re passionate about equipping you with
               the skills you need to succeed in this digital age.
             </p>
           </div>
-          <div className="flex gap-3 pt-14 pb-6">
+          <div className="flex flex-col gap-8 pb-6 pt-14 md:flex-row md:gap-3">
             <BecomeBtn />
             <JoinBtnWhite />
           </div>
         </div>
         <div>
-          <img
-            src={Image}
-            style={{ width: "505px", height: "451px" }}
-            alt="hero-image"
-          />
+          <img className="heroImg" src={Image} alt="hero-image" />
         </div>
       </div>
     </div>

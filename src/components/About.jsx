@@ -4,17 +4,13 @@ function About() {
     <div>
       <div
         id="about"
-        className="font-unbounded text-center mx-auto my-12 pt-10"
+        className="py-3 mx-auto text-center font-unbounded"
         style={{ maxWidth: "730px" }}
-        data-aos-mirror="true"
       >
-        <h3 className="text-sometexts" data-aos="fade-in">
-          About Life Tech Hub
-        </h3>
+        <h3 className="text-sometexts">About Life Tech Hub</h3>
         <h1
-          className="font-medium py-8"
-          style={{ fontSize: "40px" }}
-          data-aos="zoom-in"
+          className="px-3 py-3 text-xl font-medium md:text-4xl md:py-6"
+          // data-aos="zoom-in"
         >
           Empowering <span className="text-primary">Teenagers</span> and{" "}
           <span className="text-primary">Youths</span> with
@@ -22,14 +18,14 @@ function About() {
           Impact!
         </h1>
       </div>
-      <div className="flex justify-center items-center pb-8">
-        <img style={{ maxWidth: "1252px" }} src={Image} alt="our-team" />
+      <div className="flex items-center justify-center px-3 pb-3 md:pb-8">
+        <img src={Image} alt="our-team" />
       </div>
       <div
-        className="flex flex-col justify-center items-center mx-5 p-7 rounded-tl-2xl rounded-tr-2xl font-unbounded text-2xl leading-10 m-auto"
+        className="flex flex-col items-center justify-center p-3 m-auto text-sm leading-10 md:text-2xl md:mx-5 md:p-7 md:rounded-tl-2xl md:rounded-tr-2xl font-unbounded"
         style={{ background: "#fbfbfb" }}
       >
-        <h3 className="pb-10" style={{ maxWidth: "1400px" }}>
+        <h3 className="pb-4 md:pb-10" style={{ maxWidth: "1400px" }}>
           <strong>Our mission is simple:</strong> To empower members of the
           <strong> New Life community </strong>
           especially <strong>campus students and youth</strong> with

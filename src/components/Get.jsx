@@ -7,12 +7,12 @@ import targetIcons from "../assets/targeticons.svg";
 function Get() {
   return (
     <div>
-      <div className=" flex justify-center gap-20 mt-28 md: flex-wrap">
+      <div className="flex flex-wrap justify-center gap-20 mt-28 md:">
         <div className="p-2">
-          <h1 className="font-unbounded font-normal text-5xl m-2 mb-6 mr-10">
+          <h1 className="m-2 mb-6 mr-10 text-5xl font-normal font-unbounded">
             Get Involved <br /> with The Life <br /> Tech Hub
           </h1>
-          <p className="font-unbounded font-normal text-sm text-zinc-600 mb-6 tracking-wide m-2">
+          <p className="m-2 mb-6 text-sm font-normal tracking-wide font-unbounded text-zinc-600">
             Ready to be part of something bigger? Here’s <br /> how you can get
             involved and start your tech <br /> journey:
           </p>
@@ -22,16 +22,16 @@ function Get() {
           </div>
         </div>
 
-        <div className="flex justify-center flex-col gap-8 md:ml-16 mb-8 p-2">
-          <div className="flex justify-center items-center gap-5 ">
+        <div className="flex flex-col justify-center gap-8 p-2 mb-8 md:ml-16">
+          <div className="flex items-center justify-center gap-5 ">
             <div>
               <img src={majestIcons} alt="" />
             </div>
             <div>
-              <h1 className="font-unbounded font-medium text-3xl mb-2">
+              <h1 className="mb-2 text-3xl font-medium font-unbounded">
                 Join Our Programs
               </h1>
-              <p className="font-unbounded font-normal text-xs tracking-wider leading-5">
+              <p className="text-xs font-normal leading-5 tracking-wider font-unbounded">
                 Sign up for our hands-on digital training <br />
                 sessions and start building the skills you need <br />
                 to succeed.
@@ -39,30 +39,30 @@ function Get() {
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex items-center justify-center gap-5">
             <div>
               <img src={chestIcons} alt="" />
             </div>
             <div>
-              <h1 className="font-unbounded font-medium text-2xl mb-3">
+              <h1 className="mb-3 text-2xl font-medium font-unbounded">
                 Become a Mentor
               </h1>
-              <p className="font-unbounded font-normal text-xs tracking-wider leading-5">
+              <p className="text-xs font-normal leading-5 tracking-wider font-unbounded">
                 Share your knowledge and experience by <br />
                 guiding the next generation of tech innovators.
               </p>
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex items-center justify-center gap-5">
             <div>
-              <img src={targetIcons} alt=""  />
+              <img src={targetIcons} alt="" />
             </div>
             <div className="mr-5">
-              <h1 className="font-unbounded font-medium text-2xl mb-3 ">
+              <h1 className="mb-3 text-2xl font-medium font-unbounded ">
                 Support Our Mission
               </h1>
-              <p className="font-unbounded font-normal text-xs tracking-wider leading-5 ">
+              <p className="text-xs font-normal leading-5 tracking-wider font-unbounded ">
                 Whether through donations or partnerships, <br />
                 your support helps us continue empowering <br />
                 others to thrive in the digital world.

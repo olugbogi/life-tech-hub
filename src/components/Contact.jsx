@@ -5,22 +5,22 @@ function Contact() {
     <div>
       <div
         id="contact"
-        className="contact-bg font-unbounded mx-12 p-10 bg-cover bg-no-repeat"
+        className="bg-no-repeat bg-cover lg:p-10 contact-bg font-unbounded"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="flex justify-around items-center">
-          <div>
-            <h3 className="text-2xl text-black">Contact Info</h3>
+        <div className="flex flex-col items-center gap-10 py-5 lg:flex-row lg:items-center lg:justify-around">
+          <div className="text-center">
+            <h3 className="pb-10 text-2xl text-black">Contact Info</h3>
             <h1
-              className="font-light"
-              style={{ fontSize: "64px", maxWidth: "575px" }}
+              className="text-6xl font-light contact"
+              // style={{ fontSize: "64px", maxWidth: "575px" }}
             >
               Get in touch with us. <br /> We&apos;re here to assist you.
             </h1>
           </div>
-          <div className="flex gap-8 items-center">
+          <div className="flex gap-8 lg:items-center">
             <div>
-              <h3 className="text-base mb-6">Email Address</h3>
+              <h3 className="mb-6 text-base">Email Address</h3>
               <hr
                 className="mb-6 bg-black"
                 style={{ width: "27px", height: "3px" }}
@@ -30,7 +30,7 @@ function Contact() {
               </a>
             </div>
             <div>
-              <h3 className="text-base mb-6">Phone Number</h3>
+              <h3 className="mb-6 text-base">Phone Number</h3>
               <hr
                 className="mb-6 bg-black"
                 style={{ width: "27px", height: "3px" }}
