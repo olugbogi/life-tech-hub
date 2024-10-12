@@ -14,7 +14,7 @@ import samuel from '../assets/sunday-samuel.svg'
 function Team() {
   return (
     <div>
-      <div className="flex justify-center items-center flex-col mt-20 rounded-t-sm">
+      <div className="flex justify-center items-center flex-col mt-20 rounded-t-sm ">
 
       <div
         id="meet"
@@ -37,8 +37,8 @@ function Team() {
             <img src={Arrow} alt="" className="mt-4" />
           </div>
         </div>
-        <div className="bg-primary flex mt-6 p-12 justify-center items-center flex-wrap gap-6 ">
-          <div className="flex gap-6 flex-wrap mt-16">
+        <div className="bg-primary flex mt-6 p-12 justify-center items-center flex-wrap gap-6 md:p-2">
+          <div className="flex gap-6 flex-wrap mt-16 md:flex-wrap justify-center items-center ">
           <div className="bg-white rounded-2xl">
             <img src={daddyBoboye} alt="" className="mt-3" />
             <h1 className="text-center mt-5 font-unbounded font-normal text-xs">Pastor Isaac Boboye</h1>
@@ -72,7 +72,7 @@ function Team() {
      </div>
     
         
-     <div className="flex gap-6 flex-wrap mb-16">
+     <div className="flex gap-6 flex-wrap mb-16 md:flex-wrap justify-center items-center ">
           <div className="bg-white rounded-2xl">
             <img src={faith} alt="" className="mt-3 " />
             <h1 className="text-center mt-5 font-unbounded font-normal text-xs">Faith Olanrewaju</h1>

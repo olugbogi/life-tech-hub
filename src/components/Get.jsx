@@ -7,23 +7,23 @@ import targetIcons from "../assets/targeticons.svg";
 function Get() {
   return (
     <div>
-      <div className=" flex justify-center gap-20 mt-28 flex-wrap">
-        <div>
-          <h1 className="font-unbounded font-normal text-5xl mb-6 mr-10">
+      <div className=" flex justify-center gap-20 mt-28 md: flex-wrap">
+        <div className="p-2">
+          <h1 className="font-unbounded font-normal text-5xl m-2 mb-6 mr-10">
             Get Involved <br /> with The Life <br /> Tech Hub
           </h1>
-          <p className="font-unbounded font-normal text-sm text-zinc-600 mb-6 tracking-wide ">
+          <p className="font-unbounded font-normal text-sm text-zinc-600 mb-6 tracking-wide m-2">
             Ready to be part of something bigger? Here’s <br /> how you can get
             involved and start your tech <br /> journey:
           </p>
-          <div className="flex gap-5">
+          <div className="flex gap-5 ">
             <JoinBtn />
             <BecomeBtn />
           </div>
         </div>
 
-        <div className="flex justify-center flex-col gap-8 ">
-          <div className="flex justify-center items-center gap-5">
+        <div className="flex justify-center flex-col gap-8 md:ml-16 mb-8 p-2">
+          <div className="flex justify-center items-center gap-5 ">
             <div>
               <img src={majestIcons} alt="" />
             </div>
@@ -56,9 +56,9 @@ function Get() {
 
           <div className="flex justify-center items-center gap-5">
             <div>
-              <img src={targetIcons} alt="" />
+              <img src={targetIcons} alt=""  />
             </div>
-            <div>
+            <div className="mr-5">
               <h1 className="font-unbounded font-medium text-2xl mb-3 ">
                 Support Our Mission
               </h1>
