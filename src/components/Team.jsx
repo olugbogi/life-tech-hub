@@ -23,12 +23,12 @@ function Team() {
             <h5 className="mb-4 text-base font-normal text-center font-unbounded">
               MEET OUR TEAM
             </h5>
-            <h1 className="mb-5 text-4xl font-normal text-center font-unbounded">
+            <h1 className="mb-5 text-2xl md:text-4xl font-medium px-3 text-center font-unbounded">
               We bring a wealth of
-              <span className="text-primary">knowledge</span>
+              <span className="text-primary"> knowledge</span>
               , <br />
               <span className="text-primary">experience</span>, and
-              <span className="text-primary">creativity</span> to help you
+              <span className="text-primary"> creativity</span> to help you
               <br />
               thrive in <span className="text-primary">Tech</span>.
             </h1>
@@ -40,8 +40,13 @@ function Team() {
           <div className="flex flex-wrap items-center justify-center gap-6 p-12 mt-6 bg-primary md:p-2">
             <div className="flex flex-wrap items-center justify-center gap-6 mt-16 md:flex-wrap">
               <div className="bg-white rounded-2xl">
-                <img src={daddyBoboye} alt="" className="mt-3" />
-                <h1 className="mt-5 text-xs font-normal text-center font-unbounded">
+                <img
+                  src={daddyBoboye}
+                  alt=""
+                  className="p-3 mt-2 rounded-3xl"
+                  style={{ width: "230px" }}
+                />
+                <h1 className="text-xs font-normal text-center font-unbounded">
                   Pastor Isaac Boboye
                 </h1>
                 <p className="mt-3 mb-3 text-xs font-light text-center font-unbounded">
@@ -97,7 +102,7 @@ function Team() {
                   Faith Olanrewaju
                 </h1>
                 <p className="mt-3 mb-3 text-xs font-light text-center font-unbounded">
-                  Program Director
+                  Cloud Computing Instructor
                 </p>
               </div>
 

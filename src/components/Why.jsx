@@ -9,7 +9,7 @@ function why() {
     <div>
       <div className="flex flex-col items-center justify-center gap-10 px-4 mt-20 lg:items-start lg:gap-28 lg:flex-row">
         <div>
-          <h1 className="mb-8 text-6xl font-normal font-unbounded">
+          <h1 className="mb-8 text-5xl lg:text-6xl font-normal font-unbounded">
             Why The Life <br /> Tech Hub?
           </h1>
           <p className="mb-10 text-lg font-normal tracking-wide font-unbounded text-zinc-600">

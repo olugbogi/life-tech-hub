@@ -9,7 +9,7 @@ function Get() {
     <div>
       <div className="flex flex-wrap justify-center gap-20 mt-28 md:">
         <div className="p-2">
-          <h1 className="m-2 mb-6 mr-10 text-5xl font-normal font-unbounded">
+          <h1 className="m-2 mb-6 mr-10 text-3xl md:text-5xl font-normal font-unbounded">
             Get Involved <br /> with The Life <br /> Tech Hub
           </h1>
           <p className="m-2 mb-6 text-sm font-normal tracking-wide font-unbounded text-zinc-600">

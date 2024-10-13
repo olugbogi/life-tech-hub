@@ -10,9 +10,9 @@ function Contact() {
       >
         <div className="flex flex-col items-center gap-10 py-5 lg:flex-row lg:items-center lg:justify-around">
           <div className="text-center">
-            <h3 className="pb-10 text-2xl text-black">Contact Info</h3>
+            <h3 className="pb-6 md:pb-10 text-2xl text-black">Contact Info</h3>
             <h1
-              className="text-4xl md:text-6xl font-light contact"
+              className="text-3xl md:text-6xl font-normal md:font-light contact"
               // style={{ fontSize: "64px", maxWidth: "575px" }}
             >
               Get in touch with us. <br /> We&apos;re here to assist you.
