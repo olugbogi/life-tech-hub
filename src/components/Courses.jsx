@@ -8,8 +8,14 @@ import mobileApp from "../assets/mobile-app.svg";
 import digitalMarketing from "../assets/digital-marketing.svg";
 import cloudComputing from "../assets/cloud-computing.svg";
 import webDevelopment from "../assets/web-development.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Courses() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
   return (
     <div>
       <div className="flex flex-col items-center justify-center mt-32">
@@ -17,14 +23,17 @@ function Courses() {
           <p className="mb-3 text-base font-normal text-center font-unbounded">
             OUR COURSES
           </p>
-          <h1 className="px-2 text-2xl md:text-4xl font-medium tracking-wider text-center font-unbounded">
+          <h1 className="px-2 text-2xl font-medium tracking-wider text-center md:text-4xl font-unbounded">
             We offer a range of courses designed to equip <br /> you with
             essential tech skills for the digital <br /> world
           </h1>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-16 lg:px-20">
-          <div className="p-3 border-2 border-solid rounded-2xl">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:px-20">
+          <div
+            data-aos="slide-right"
+            className="p-3 border-2 border-solid rounded-2xl"
+          >
             <div>
               <img src={uiDesign} alt="" className="rounded-xl w-80" />
               <h4 className="mt-4 ml-1 text-base font-unbounded">
@@ -57,7 +66,10 @@ function Courses() {
             </div>
           </div>
 
-          <div className="p-3 border-2 border-solid rounded-2xl">
+          <div
+            data-aos="slide-left"
+            className="p-3 border-2 border-solid rounded-2xl"
+          >
             <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Data Analysis
@@ -84,7 +96,10 @@ function Courses() {
             </div>
           </div>
 
-          <div className="p-3 border-2 border-solid rounded-2xl">
+          <div
+            data-aos="slide-right"
+            className="p-3 border-2 border-solid rounded-2xl"
+          >
             <img src={mobileApp} alt="" className="rounded-xl w-80" />
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Mobile App Development
@@ -111,7 +126,10 @@ function Courses() {
             </div>
           </div>
 
-          <div className="p-3 border-2 border-solid rounded-2xl">
+          <div
+            data-aos="slide-left"
+            className="p-3 border-2 border-solid rounded-2xl"
+          >
             <img src={digitalMarketing} alt="" className="rounded-xl w-80" />
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Digital Marketing
@@ -138,7 +156,10 @@ function Courses() {
             </div>
           </div>
 
-          <div className="p-3 border-2 border-solid rounded-2xl">
+          <div
+            data-aos="slide-right"
+            className="p-3 border-2 border-solid rounded-2xl"
+          >
             <img src={cloudComputing} alt="" className="rounded-xl w-80" />
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Cloud Computing
@@ -165,7 +186,10 @@ function Courses() {
             </div>
           </div>
 
-          <div className="p-3 border-2 border-solid rounded-2xl">
+          <div
+            data-aos="slide-left"
+            className="p-3 border-2 border-solid rounded-2xl"
+          >
             <img src={webDevelopment} alt="" className="rounded-xl w-80" />
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Web Development

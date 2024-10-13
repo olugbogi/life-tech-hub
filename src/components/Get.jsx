@@ -3,13 +3,19 @@ import BecomeBtn from "./Buttons/BecomeBtn";
 import majestIcons from "../assets/majesticons.svg";
 import chestIcons from "../assets/chestIcons (2).svg";
 import targetIcons from "../assets/targeticons.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Get() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
   return (
     <div>
       <div className="flex flex-wrap justify-center gap-20 mt-28 md:">
         <div className="p-2">
-          <h1 className="m-2 mb-6 mr-10 text-5xl font-normal font-unbounded">
+          <h1 className="m-2 mb-6 mr-10 text-3xl font-normal md:text-5xl font-unbounded">
             Get Involved <br /> with The Life <br /> Tech Hub
           </h1>
           <p className="m-2 mb-6 text-sm font-normal tracking-wide font-unbounded text-zinc-600">
@@ -23,7 +29,7 @@ function Get() {
         </div>
 
         <div className="flex flex-col justify-center gap-8 p-2 mb-8 md:ml-16">
-          <div className="flex items-center justify-center gap-5 ">
+          <div data-aos='zoom-in-right' className="flex items-center justify-center gap-5 ">
             <div>
               <img src={majestIcons} alt="" />
             </div>
@@ -39,7 +45,7 @@ function Get() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-5">
+          <div data-aos='zoom-in-left' className="flex items-center justify-center gap-5">
             <div>
               <img src={chestIcons} alt="" />
             </div>
@@ -54,7 +60,7 @@ function Get() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-5">
+          <div data-aos='zoom-in-right' className="flex items-center justify-center gap-5">
             <div>
               <img src={targetIcons} alt="" />
             </div>
