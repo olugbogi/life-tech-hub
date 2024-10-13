@@ -10,11 +10,13 @@ const navbarMenu = [
     title: "About Us",
     link: "#about",
   },
+
   {
     id: 3,
     title: "Meet the Team",
     link: "#meet",
   },
+
   {
     id: 4,
     title: "Contact Us",
