@@ -19,8 +19,7 @@ function Contact() {
           <div className="text-center">
             <h3 className="pb-6 text-2xl text-black md:pb-10">Contact Info</h3>
             <h1
-              className="text-3xl font-normal md:text-6xl md:font-light contact"
-              // style={{ fontSize: "64px", maxWidth: "575px" }}
+              className="text-3xl font-normal md:font-bold md:text-7xl contact"
             >
               Get in touch with us. <br /> We&apos;re here to assist you.
             </h1>

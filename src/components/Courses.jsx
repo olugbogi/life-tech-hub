@@ -30,7 +30,7 @@ function Courses() {
           </h1>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:px-20">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-16 lg:px-20">
           <div
             data-aos="slide-right"
             className="p-3 border-2 border-solid rounded-2xl"
