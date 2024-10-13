@@ -38,7 +38,7 @@ function Navbar() {
         ></i>
 
         <div
-          className={`absolute xl:hidden top-36 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
+          className={`absolute xl:hidden top-24 md:top-36 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
             isMenuOpen === true ? "opacity-100" : "opacity-0"
           }`}
           style={{
