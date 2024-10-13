@@ -17,7 +17,7 @@ function Courses() {
           <p className="mb-3 text-base font-normal text-center font-unbounded">
             OUR COURSES
           </p>
-          <h1 className="px-2 text-4xl font-medium tracking-wider text-center font-unbounded">
+          <h1 className="px-2 text-2xl md:text-4xl font-medium tracking-wider text-center font-unbounded">
             We offer a range of courses designed to equip <br /> you with
             essential tech skills for the digital <br /> world
           </h1>

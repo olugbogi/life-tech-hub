@@ -1,4 +1,5 @@
 import mockData from "../../mockData/data.js";
+import Buttons from "./Buttons.jsx";
 
 function Links() {
   return (
@@ -17,14 +18,21 @@ function Links() {
           Contact Us
         </a>
       </div> */}
-      <div className="flex items-center justify-center gap-10">
+      {/* <ul className="items-center justify-center hidden gap-10 xl:flex-row xl:flex">
         {mockData.map((item) => (
-          <div key={item.id}>
-            <a className="font-medium font-inter" href={item.link}>
+          <li key={item.id}>
+            <a
+              className="p-3 font-medium transition-all rounded-md font-inter hover:bg-secondary hover:text-white hover:scale-105"
+              href={item.link}
+            >
               {item.title}
             </a>
-          </div>
+          </li>
         ))}
+      </ul> */}
+
+      <div className="relative items-center justify-center hidden gap-3 md:flex">
+        <Buttons />
       </div>
     </div>
   );
