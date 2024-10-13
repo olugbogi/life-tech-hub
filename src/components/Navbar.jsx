@@ -4,11 +4,10 @@ import { useState } from "react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
 
   return (
     <div>
-      <div className="flex items-center justify-between px-5 mx-auto drop-shadow-md md:px-5 lg:px-20 py-7">
+      <div className="flex items-center justify-between px-8 mx-auto drop-shadow-md md:px-20 py-7">
         <a
           href="/"
           className="text-xl font-extrabold transition-all text-primary font-manrope hover:scale-105"
@@ -28,24 +27,24 @@ function Navbar() {
           ))}
         </ul>
 
-        <div className="items-center justify-center hidden gap-3 md:flex">
+        <div className="items-center justify-center hidden gap-3 lg:flex">
           <Buttons />
         </div>
 
         {/* Mobile Menu */}
         <i
-          className="block text-4xl cursor-pointer bx bx-menu xl:hidden"
+          className="block text-4xl cursor-pointer text-primary fa-solid fa-bars xl:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></i>
+      </div>
 
-        <div
-          className={`absolute xl:hidden top-24 md:top-36 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
-            isMenuOpen === true ? "opacity-100" : "opacity-0"
-          }`}
-          style={{
-            transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
-          }}
-        >
+      {/* Mobile Menu Container */}
+      <div
+        className={`${
+          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden transition-all duration-300 ease-in-out`}
+      >
+        <div className="bg-white flex flex-col items-center gap-6 font-semibold text-lg">
           {mockData.map((item) => (
             <a
               key={item.id}
@@ -55,6 +54,9 @@ function Navbar() {
               {item.title}
             </a>
           ))}
+        </div>
+        <div className="my-10">
+          <Buttons />
         </div>
       </div>
     </div>
