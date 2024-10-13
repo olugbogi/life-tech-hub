@@ -132,7 +132,7 @@ function Team() {
               <div data-aos="fade-right" className="bg-white rounded-2xl">
                 <LazyLoad>
                   <img src={ifeoluwa} alt="" className="p-3 mt-2 rounded-3xl" />
-                </LazyLoad>
+                </LazyLoad> 
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Ifeoluwa Boboye
                 </h1>
