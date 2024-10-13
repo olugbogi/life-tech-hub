@@ -13,6 +13,7 @@ import samuel from "../assets/sunday-samuel.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import LazyLoad from "react-lazyload";
 
 function Team() {
   useEffect(() => {
@@ -45,13 +46,15 @@ function Team() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 p-12 mt-6 bg-primary md:p-2">
             <div className="flex flex-wrap items-center justify-center gap-6 mt-16 md:flex-wrap">
-              <div data-aos='fade-right' className="bg-white rounded-2xl">
-                <img
-                  src={daddyBoboye}
-                  alt=""
-                  className="p-3 mt-2 rounded-3xl"
-                  style={{ width: "230px" }}
-                />
+              <div data-aos="fade-right" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img
+                    src={daddyBoboye}
+                    alt=""
+                    className="p-3 mt-2 rounded-3xl"
+                    style={{ width: "230px" }}
+                  />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Pastor Isaac Boboye
                 </h1>
@@ -60,8 +63,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-left' className="bg-white rounded-2xl">
-                <img src={david} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-left" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={david} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   David Akinboyewa
                 </h1>
@@ -70,8 +75,14 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-right' className="bg-white rounded-2xl">
-                <img src={folashade} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-right" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img
+                    src={folashade}
+                    alt=""
+                    className="p-3 mt-2 rounded-3xl"
+                  />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Folashade Adeola-Adegbite
                 </h1>
@@ -80,8 +91,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-left' className="bg-white rounded-2xl">
-                <img src={isreal} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-left" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={isreal} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Israel Boboye
                 </h1>
@@ -90,8 +103,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-right' className="bg-white rounded-2xl">
-                <img src={andrew} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-right" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={andrew} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Andrew Orekoya
                 </h1>
@@ -102,8 +117,10 @@ function Team() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6 mb-16 md:flex-wrap ">
-              <div data-aos='fade-left' className="bg-white rounded-2xl">
-                <img src={faith} alt="" className="p-3 mt-2" />
+              <div data-aos="fade-left" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={faith} alt="" className="p-3 mt-2" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Faith Olanrewaju
                 </h1>
@@ -112,8 +129,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-right' className="bg-white rounded-2xl">
-                <img src={ifeoluwa} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-right" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={ifeoluwa} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Ifeoluwa Boboye
                 </h1>
@@ -122,8 +141,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-left' className="bg-white rounded-2xl">
-                <img src={joshua} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-left" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={joshua} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Joshua Adetunji
                 </h1>
@@ -132,8 +153,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-right' className="bg-white rounded-2xl">
-                <img src={favour} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-right" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={favour} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Favour Ekundayo
                 </h1>
@@ -142,8 +165,10 @@ function Team() {
                 </p>
               </div>
 
-              <div data-aos='fade-left' className="bg-white rounded-2xl">
-                <img src={samuel} alt="" className="p-3 mt-2 rounded-3xl" />
+              <div data-aos="fade-left" className="bg-white rounded-2xl">
+                <LazyLoad>
+                  <img src={samuel} alt="" className="p-3 mt-2 rounded-3xl" />
+                </LazyLoad>
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Samuel Sunday
                 </h1>

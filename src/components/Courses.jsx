@@ -11,10 +11,11 @@ import webDevelopment from "../assets/web-development.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import LazyLoad from "react-lazyload";
 
 function Courses() {
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: "ease-in-out" });
+    AOS.init({ duration: 1000, easing: "easeInOut" });
   }, []);
   return (
     <div>
@@ -35,7 +36,9 @@ function Courses() {
             className="p-3 border-2 border-solid rounded-2xl"
           >
             <div>
-              <img src={uiDesign} alt="" className="rounded-xl w-80" />
+              <LazyLoad>
+                <img src={uiDesign} alt="" className="rounded-xl w-80" />
+              </LazyLoad>
               <h4 className="mt-4 ml-1 text-base font-unbounded">
                 UI/UX Design Essential Training
               </h4>
@@ -70,7 +73,9 @@ function Courses() {
             data-aos="slide-left"
             className="p-3 border-2 border-solid rounded-2xl"
           >
-            <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
+            <LazyLoad>
+              <img src={dataAnalysis} alt="" className="rounded-xl w-80" />
+            </LazyLoad>
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Data Analysis
             </h4>
@@ -100,7 +105,9 @@ function Courses() {
             data-aos="slide-right"
             className="p-3 border-2 border-solid rounded-2xl"
           >
-            <img src={mobileApp} alt="" className="rounded-xl w-80" />
+            <LazyLoad>
+              <img src={mobileApp} alt="" className="rounded-xl w-80" />
+            </LazyLoad>
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Mobile App Development
             </h4>
@@ -130,7 +137,9 @@ function Courses() {
             data-aos="slide-left"
             className="p-3 border-2 border-solid rounded-2xl"
           >
-            <img src={digitalMarketing} alt="" className="rounded-xl w-80" />
+            <LazyLoad>
+              <img src={digitalMarketing} alt="" className="rounded-xl w-80" />
+            </LazyLoad>
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Digital Marketing
             </h4>
@@ -160,7 +169,9 @@ function Courses() {
             data-aos="slide-right"
             className="p-3 border-2 border-solid rounded-2xl"
           >
-            <img src={cloudComputing} alt="" className="rounded-xl w-80" />
+            <LazyLoad>
+              <img src={cloudComputing} alt="" className="rounded-xl w-80" />
+            </LazyLoad>
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Cloud Computing
             </h4>
@@ -190,7 +201,9 @@ function Courses() {
             data-aos="slide-left"
             className="p-3 border-2 border-solid rounded-2xl"
           >
-            <img src={webDevelopment} alt="" className="rounded-xl w-80" />
+            <LazyLoad>
+              <img src={webDevelopment} alt="" className="rounded-xl w-80" />
+            </LazyLoad>
             <h4 className="mt-4 ml-2 text-base font-unbounded">
               Web Development
             </h4>

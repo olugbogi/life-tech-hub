@@ -3,6 +3,7 @@ import BecomeBtn from "./Buttons/BecomeBtn";
 import JoinBtnWhite from "./Buttons/JoinBtnWhite";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import LazyLoad from "react-lazyload";
 
 function Hero() {
   const ref = useRef(null);
@@ -39,9 +40,9 @@ function Hero() {
             <JoinBtnWhite />
           </div>
         </div>
-        <div>
+        <LazyLoad>
           <img className="heroImg" src={Image} alt="hero-image" />
-        </div>
+        </LazyLoad>
       </motion.div>
     </div>
   );
