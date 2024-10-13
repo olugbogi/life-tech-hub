@@ -32,23 +32,18 @@ function Navbar() {
           <Buttons />
         </div>
 
-        {/* Hamburger Icon with onTouchStart */}
+        {/* Mobile Menu */}
         <i
           className="block text-4xl cursor-pointer bx bx-menu xl:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          onTouchStart={() => setIsMenuOpen(!isMenuOpen)} // Ensures it works on iPhones
-          style={{ WebkitTapHighlightColor: "transparent" }} // Disable iOS tap highlight
         ></i>
 
-        {/* Dropdown Menu with WebKit-specific fixes */}
         <div
-          className={`absolute xl:hidden top-24 md:top-36 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform z-50 ${
+          className={`absolute xl:hidden top-24 md:top-36 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${
             isMenuOpen === true ? "opacity-100" : "opacity-0"
           }`}
           style={{
             transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
-            WebkitTransition:
-              "transform 0.3s ease-in-out, opacity 0.3s ease-in-out", // WebKit transition
           }}
         >
           {mockData.map((item) => (

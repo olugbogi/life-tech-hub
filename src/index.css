@@ -45,17 +45,12 @@
   }
 }
 
-/* @media (max-width: 767px) {
-  .heroImg {
-    display: block;
-    margin: auto;
-    width: 600px !important;
-  }
-} */
-
-/* .contact-bg {
-  background: url(./src/assets/contact-bg.svg) !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
-} */
+.hamburger-menu {
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
