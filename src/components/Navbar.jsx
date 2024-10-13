@@ -32,9 +32,11 @@ function Navbar() {
           <Buttons />
         </div>
 
+        {/* Mobile Menu */}
         <i
           className="block text-4xl cursor-pointer bx bx-menu xl:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onTouchStart={() => setIsMenuOpen(!isMenuOpen)}
         ></i>
 
         <div
