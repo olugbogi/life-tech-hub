@@ -10,11 +10,17 @@ import ifeoluwa from "../assets/ifeoluwa-boboye.svg";
 import joshua from "../assets/joshua-adetunji.svg";
 import favour from "../assets/favor-ekundayo.svg";
 import samuel from "../assets/sunday-samuel.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Team() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
   return (
     <div>
-      <div className="flex flex-col items-center justify-center rounded-t-sm ">
+      <div className="flex flex-aos='fade-right'-col items-center justify-center rounded-t-sm data ">
         <div
           id="meet"
           className="flex flex-col items-center justify-center mt-40"
@@ -23,7 +29,7 @@ function Team() {
             <h5 className="mb-4 text-base font-normal text-center font-unbounded">
               MEET OUR TEAM
             </h5>
-            <h1 className="mb-5 text-2xl md:text-4xl font-medium px-3 text-center font-unbounded">
+            <h1 className="px-3 mb-5 text-2xl font-medium text-center md:text-4xl font-unbounded">
               We bring a wealth of
               <span className="text-primary"> knowledge</span>
               , <br />
@@ -39,7 +45,7 @@ function Team() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 p-12 mt-6 bg-primary md:p-2">
             <div className="flex flex-wrap items-center justify-center gap-6 mt-16 md:flex-wrap">
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-right' className="bg-white rounded-2xl">
                 <img
                   src={daddyBoboye}
                   alt=""
@@ -54,7 +60,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-left' className="bg-white rounded-2xl">
                 <img src={david} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   David Akinboyewa
@@ -64,7 +70,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-right' className="bg-white rounded-2xl">
                 <img src={folashade} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Folashade Adeola-Adegbite
@@ -74,7 +80,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-left' className="bg-white rounded-2xl">
                 <img src={isreal} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Israel Boboye
@@ -84,7 +90,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-right' className="bg-white rounded-2xl">
                 <img src={andrew} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Andrew Orekoya
@@ -96,7 +102,7 @@ function Team() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6 mb-16 md:flex-wrap ">
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-left' className="bg-white rounded-2xl">
                 <img src={faith} alt="" className="p-3 mt-2" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Faith Olanrewaju
@@ -106,7 +112,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-right' className="bg-white rounded-2xl">
                 <img src={ifeoluwa} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Ifeoluwa Boboye
@@ -116,7 +122,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-left' className="bg-white rounded-2xl">
                 <img src={joshua} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Joshua Adetunji
@@ -126,7 +132,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-right' className="bg-white rounded-2xl">
                 <img src={favour} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Favour Ekundayo
@@ -136,7 +142,7 @@ function Team() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl">
+              <div data-aos='fade-left' className="bg-white rounded-2xl">
                 <img src={samuel} alt="" className="p-3 mt-2 rounded-3xl" />
                 <h1 className="text-xs font-normal text-center font-unbounded">
                   Samuel Sunday

@@ -1,16 +1,26 @@
 import Image from "../assets/hero-image.svg";
 import BecomeBtn from "./Buttons/BecomeBtn";
 import JoinBtnWhite from "./Buttons/JoinBtnWhite";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Hero() {
+  const ref = useRef(null);
+
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div>
-      <div
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={isInView ? { opacity: 1, scale: 1 } : {}}
+        transition={{ duration: 1 }}
         className="flex flex-col items-center justify-between gap-10 p-10 py-5 mx-2 lg:mx-auto bg-primary rounded-3xl font-unbounded lg:flex-row lg:py-12"
         style={{ maxWidth: "1201px" }}
       >
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left hero-box">
-          <h3 className="hero-sm-box bg-white text-secondary rounded-full text-xs text-center p-2.5">
+          <h3 className="p-4 text-xs text-center bg-white rounded-full hero-sm-box text-secondary md:text-sm md:py-3 md:px-1">
             Empowering Innovators, Shaping the Future
           </h3>
           <div className="pt-5">
@@ -32,7 +42,7 @@ function Hero() {
         <div>
           <img className="heroImg" src={Image} alt="hero-image" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
